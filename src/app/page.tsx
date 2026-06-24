@@ -33,22 +33,23 @@ export default function Home() {
         {/* ── Hero ── */}
         <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 md:px-8">
           {/* Skyline background animation */}
-          <iframe
-            src="/skyline-animation.html"
-            className="absolute pointer-events-none"
-            style={{
-              opacity: 0.15,
-              border: "none",
-              width: "100%",
-              height: "100%",
-              bottom: 0,
-              left: "-2%",
-              transform: "scale(1.35)",
-              transformOrigin: "bottom center",
-            }}
-            scrolling="no"
-            allowTransparency={true}
-          />
+          <div className="pointer-events-none absolute inset-0 overflow-hidden">
+            <iframe
+              src="/skyline-animation.html"
+              scrolling="no"
+              style={{
+                opacity: 0.15,
+                border: "none",
+                width: "100%",
+                height: "100%",
+                position: "absolute",
+                bottom: 0,
+                left: 0,
+                transform: "scale(1.35)",
+                transformOrigin: "bottom center",
+              }}
+            />
+          </div>
 
           <div className="relative z-10 mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 md:text-6xl lg:text-7xl">
