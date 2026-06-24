@@ -47,7 +47,7 @@ export function ProblemBento() {
   const base = "rounded-2xl border border-transparent bg-gray-50 transition-[border-color] duration-150"
 
   return (
-    <section className="bg-white px-6 py-24">
+    <section className="bg-white px-4 py-16 md:px-8 md:py-24">
       <div className="mx-auto max-w-5xl">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:grid-rows-2">
 

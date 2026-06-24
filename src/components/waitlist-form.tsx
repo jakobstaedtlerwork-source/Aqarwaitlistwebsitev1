@@ -45,7 +45,7 @@ export function WaitlistForm() {
 
   return (
     <form onSubmit={handleSubmit} className="mt-5 space-y-2">
-      <div className="flex flex-col gap-2 sm:flex-row">
+      <div className="flex flex-col gap-2 md:flex-row">
         <Input
           type="email"
           placeholder="your@email.com"
@@ -55,7 +55,7 @@ export function WaitlistForm() {
           className="h-14 flex-1 text-base"
         />
         <Select value={units} onValueChange={setUnits} required>
-          <SelectTrigger className="h-14 w-full text-base sm:w-[120px]">
+          <SelectTrigger className="h-14 w-full text-base md:w-[120px]">
             <SelectValue placeholder="Units" />
           </SelectTrigger>
           <SelectContent>
@@ -69,7 +69,7 @@ export function WaitlistForm() {
         <Button
           type="submit"
           disabled={status === "loading" || !email || !units}
-          className="h-14 w-full bg-[#2355F5] text-base hover:bg-[#1a44e0] sm:w-auto"
+          className="h-14 w-full bg-[#2355F5] text-base hover:bg-[#1a44e0] md:w-auto"
         >
           {status === "loading" ? (
             <>

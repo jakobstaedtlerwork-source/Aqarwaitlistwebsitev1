@@ -85,7 +85,7 @@ export function SolutionCards() {
   }, [])
 
   return (
-    <section className="px-6 py-24">
+    <section className="px-4 py-16 md:px-8 md:py-24">
       <div className="mx-auto max-w-5xl">
         <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[#2355F5]">
           The Solution

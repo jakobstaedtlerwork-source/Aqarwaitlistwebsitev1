@@ -17,13 +17,13 @@ export default function Home() {
     <div className="min-h-screen bg-white">
       {/* Navbar */}
       <nav className="sticky top-0 z-50 border-b border-gray-100 bg-white/95 backdrop-blur-sm">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-1">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-1 md:px-8">
           <Image
             src="/aqar-logo.svg"
             alt="Aqar"
             width={160}
             height={64}
-            className="h-16 w-auto"
+            className="h-10 w-auto md:h-16"
           />
           <span className="text-sm font-bold text-[#2355F5]">Sign in</span>
         </div>
@@ -31,7 +31,7 @@ export default function Home() {
 
       <main>
         {/* ── Hero ── */}
-        <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6">
+        <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 md:px-8">
           {/* Skyline background animation */}
           <iframe
             src="/skyline-animation.html"
@@ -51,21 +51,21 @@ export default function Home() {
           />
 
           <div className="relative z-10 mx-auto max-w-3xl text-center">
-            <h1 className="text-5xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 md:text-6xl lg:text-7xl">
               The smart way to{" "}
               <span style={{ color: "#2355F5" }}>manage</span> your properties.
             </h1>
-            <p className="mt-5 text-xl font-semibold text-gray-900 sm:text-2xl">
+            <p className="mt-4 text-base font-semibold text-gray-900 md:mt-5 md:text-xl">
               Maximum control. Minimum effort.
             </p>
-            <p className="mx-auto mt-4 max-w-md text-base leading-relaxed text-muted-foreground sm:text-lg">
+            <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-muted-foreground md:mt-4 md:text-base">
               Made in Dubai, for Dubai landlords. One platform for your entire
               portfolio - without the chaos.
             </p>
 
-            <div className="relative z-10 mt-10">
-              <a href="#waitlist">
-                <button className="rounded-xl bg-[#2355F5] px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-blue-700">
+            <div className="relative z-10 mt-8 md:mt-10">
+              <a href="#waitlist" className="block w-full md:inline md:w-auto">
+                <button className="w-full rounded-xl bg-[#2355F5] px-8 py-4 text-lg font-semibold text-white transition-colors hover:bg-blue-700 md:w-auto">
                   Join Waitlist
                 </button>
               </a>
@@ -78,10 +78,10 @@ export default function Home() {
         <SolutionCards />
 
         {/* ── Waitlist CTA ── */}
-        <section id="waitlist" className="px-6 py-24">
+        <section id="waitlist" className="px-4 py-16 md:px-8 md:py-24">
           <div className="mx-auto max-w-2xl">
             <Card className="rounded-2xl border border-gray-100 shadow-xl shadow-gray-100/50">
-              <CardContent className="p-10 md:p-14">
+              <CardContent className="p-6 md:p-14">
                 {/* Avatar stack */}
                 <div className="mb-5 flex items-center gap-3">
                   <div className="flex -space-x-2">
@@ -99,8 +99,8 @@ export default function Home() {
                   </span>
                 </div>
 
-                <h2 className="mb-2 text-3xl font-bold text-gray-900">Get early access.</h2>
-                <p className="mb-6 text-base text-gray-500">
+                <h2 className="mb-2 text-2xl font-bold text-gray-900 md:text-3xl">Get early access.</h2>
+                <p className="mb-6 text-sm text-gray-500 md:text-base">
                   The first 100 landlords get 3 months free. No strings attached.
                 </p>
 
@@ -123,7 +123,7 @@ export default function Home() {
       </main>
 
       {/* ── Footer ── */}
-      <footer className="border-t border-gray-100 px-6 py-8">
+      <footer className="border-t border-gray-100 px-4 py-8 md:px-8">
         <div className="mx-auto flex max-w-6xl items-center justify-between">
           <Image
             src="/aqar-logo.svg"
