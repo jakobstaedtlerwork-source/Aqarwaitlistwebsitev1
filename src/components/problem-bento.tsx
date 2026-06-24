@@ -1,19 +1,19 @@
 "use client"
 
 import { useEffect, useRef } from "react"
-import { motion } from "motion/react"
+import { motion, type Variants } from "motion/react"
 import { FileQuestion, TrendingDown, Clock } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 const RADIUS = 300
 
-const fadeUp = {
+const fadeUp: Variants = {
   hidden: { opacity: 0, y: 24 },
-  visible: (i: number) => ({
+  visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, delay: i * 0.1, ease: "easeOut" },
-  }),
+    transition: { duration: 0.5, delay: 0.1 },
+  },
 }
 
 export function ProblemBento() {
